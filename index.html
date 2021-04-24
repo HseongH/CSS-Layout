@@ -18,9 +18,13 @@
 
     <!-- STYLE -->
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/float/float.css">
+
+    <!-- CLASS LIST -->
+    <link rel="stylesheet" href="css/class-list.css">
 </head>
 <body>
-<div class="body__container">
+<div class="body__container style--float">
 
     <!-- HEADER -->
     <header class="section">
@@ -36,7 +40,7 @@
                 </h1>
 
                 <div class="search-area">
-                    <button class="btn btn--search">
+                    <button type="submit" class="btn btn--search">
                         <img src="https://img.icons8.com/fluent-systems-filled/96/000000/search.png" alt="search" />
                     </button>
 
@@ -49,7 +53,7 @@
             <nav class="main-menu-area">
                 <ul class="menu-container">
                     <li class="menu__main text">
-                        <ul class="sub-container">
+                        <ul class="sub-container hide">
                             <li class="menu__sub"></li>
                             <li class="menu__sub"></li>
                             <li class="menu__sub"></li>
@@ -60,7 +64,7 @@
                     </li>
                     
                     <li class="menu__main text">
-                        <ul class="sub-container">
+                        <ul class="sub-container hide">
                             <li class="menu__sub"></li>
                             <li class="menu__sub"></li>
                             <li class="menu__sub"></li>
@@ -71,7 +75,7 @@
                     </li>
 
                     <li class="menu__main text">
-                        <ul class="sub-container">
+                        <ul class="sub-container hide">
                             <li class="menu__sub"></li>
                             <li class="menu__sub"></li>
                             <li class="menu__sub"></li>
@@ -82,7 +86,7 @@
                     </li>
 
                     <li class="menu__main text">
-                        <ul class="sub-container">
+                        <ul class="sub-container hide">
                             <li class="menu__sub"></li>
                             <li class="menu__sub"></li>
                             <li class="menu__sub"></li>
@@ -93,7 +97,7 @@
                     </li>
 
                     <li class="menu__main text">
-                        <ul class="sub-container">
+                        <ul class="sub-container hide">
                             <li class="menu__sub"></li>
                             <li class="menu__sub"></li>
                             <li class="menu__sub"></li>
@@ -112,12 +116,12 @@
     <section class="section section__banner">
         <div class="container">
 
-            <div class="image-slide"></div>
+            <div class="image-slide box"></div>
 
-            <button class="btn btn--left">
+            <button class="btn btn--left arrow">
                 <img src="https://img.icons8.com/material-rounded/96/000000/back--v1.png" alt="left arrow" />
             </button>
-            <button class="btn btn--right">
+            <button class="btn btn--right arrow">
                 <img src="https://img.icons8.com/material-rounded/96/000000/forward.png" alt="right arrow" />
             </button>
 
@@ -204,22 +208,24 @@
                 <p class="info__items email text"></p>
             </div>
 
-            <div class="footer__image">
-                <div class="thumbnail box"></div>
-                <div class="thumbnail box"></div>
-                <div class="thumbnail box"></div>
-                <div class="thumbnail box"></div>
-            </div>
-
-            <div class="footer__contact">
-                <div class="license">
-                    <a href="https://icons8.com/" target="_blank"><strong>icon by</strong> https://icons8.com/</a>
+            <div class="footer__right">
+                <div class="footer__image">
+                    <div class="thumbnail box"></div>
+                    <div class="thumbnail box"></div>
+                    <div class="thumbnail box"></div>
+                    <div class="thumbnail box"></div>
                 </div>
-
-                <div class="sns__container">
-                    <div class="sns box"></div>
-                    <div class="sns box"></div>
-                    <div class="sns box"></div>
+    
+                <div class="footer__contact">
+                    <div class="license">
+                        <a href="https://icons8.com/" target="_blank"><strong>icon by</strong> https://icons8.com/</a>
+                    </div>
+    
+                    <div class="sns__container">
+                        <div class="sns box"></div>
+                        <div class="sns box"></div>
+                        <div class="sns box"></div>
+                    </div>
                 </div>
             </div>
 

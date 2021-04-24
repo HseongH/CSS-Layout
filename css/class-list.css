@@ -1,0 +1,9 @@
+/* SELECTED */
+.selected {
+    background: #F7E598 !important;
+}
+
+/* HIDE */
+.hide {
+    display: none;
+}

@@ -1,25 +1,27 @@
 /* CLEARFIX */
-.style__float .clearfix::after {
-    content: "";
+.style--float .container::after,
+.style--float .header__top::after,
+.style--float .menu-container::after,
+.style--float .footer__right::after,
+.style--float .footer__image::after,
+.style--float .sns__container::after,
+.style--float .footer__contact::after {
     display: block;
+    content: "";
     clear: both;
 }
 
-.style__float .float--left {
+/* HEADER */
+.style--float header.section .header__top {
+    position: relative;
+}
+
+.style--float header.section .header__top .btn--nav {
+    margin-top: 13px;
     float: left;
 }
 
-.style__float .float--right {
-    float: right;
-}
-
-/* HEADER */
-.style__float header.section .logo {
-    line-height: 80px;
-}
-
-.style__float header.section .menu-container {
-    width: 400px;
+.style--float header.section .header__top .logo {
     position: absolute;
     top: 0;
     right: 0;
@@ -28,55 +30,64 @@
     margin: auto;
 }
 
-.style__float header.section .menu-container .menu::after {
-    content: "";
-    display: block;
-    clear: both;
+.style--float header.section .header__top .search-area {
+    margin-top: 22.5px;
+    float: right;
 }
 
-.style__float header.section .menu-container .menu .menu-items {
-    width: 100px;
+.style--float header.section .main-menu-area .menu-container .menu__main {
+    width: 224px;
     float: left;
-    text-align: center;
-    line-height: 80px;
-}
-
-.style__float header.section .search {
-    width: 80px;
-    height: 80px;
-    padding: 25px;
-    box-sizing: border-box;
 }
 
 /* BANNER */
 
-/* PRODUCT */
-.style__float .section__product .product__card {
+/* SUMMARY */
+.style--float .section__summary .summary__card {
+    width: 400px;
     float: left;
 }
 
-/* PRODUCT SUMMARY */
-.style__float .section__product-summary .product-summary__card img {
-    margin-top: -70px;
+/* SERVICE */
+.style--float .section__service .service__card {
+    width: 400px;
+    float: left;
 }
-
-.style__float .section__product-summary .product-summary__card .product-summary {
-    padding: 70px 50px;
-}
-
-/* ABOUT */
 
 /* FOOTER */
-.style__float footer.section .footer__info {
-    margin-left: 300px;
+.style--float footer.section .footer__info {
+    float: left;
 }
 
-.style__float footer.section .contact .sns::after {
-    content: "";
-    display: block;
-    clear: both;
+.style--float footer.section .footer__right {
+    float: right;
 }
 
-.style__float footer.section .contact .sns .sns-img {
+.style--float footer.section .footer__image {
+    float: left;
+}
+
+.style--float footer.section .footer__image .thumbnail {
+    float: left;
+}
+
+.style--float footer.section .footer__image .thumbnail:nth-child(2n + 1) {
+    margin-right: 10px;
+}
+
+.style--float footer.section .footer__image .thumbnail:first-child,
+.style--float footer.section .footer__image .thumbnail:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.style--float footer.section .footer__contact {
+    float: left;
+}
+
+.style--float footer.section .footer__contact .sns__container {
+    float: right;
+}
+
+.style--float footer.section .footer__contact .sns__container .sns {
     float: left;
 }
