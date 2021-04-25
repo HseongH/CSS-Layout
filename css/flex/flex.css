@@ -1,87 +1,65 @@
-/* COMMON */
-/* SECTION & CONTAINER */
-.section .container {
-    display: flex;
-}
-
+/* FLEX */
 /* HEADER */
-.style__flex header.section .container {
-    height: 80px;
+.style--flex header.section .header__top {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.style__flex header.section .logo {
-    display: flex;
-    align-items: center;
-}
-
-.style__flex header.section .menu-container .menu {
-    display: flex;
-}
-
-.style__flex header.section .menu-container .menu .menu-items {
-    padding: 15px;
-    margin-right: 20px;
-}
-
-.style__flex header.section .menu-container .menu .menu-items:last-child {
-    margin-right: 0;
-}
-
-/* BANNER */
-
-/* PRODUCT */
-
-/* PRODUCT SUMMARY */
-.style__flex .section__product-summary .container {
-    display: block;
-}
-
-.style__flex .section__product-summary .product-summary__card {
-    display: flex;
     position: relative;
 }
 
-.style__flex .section__product-summary .product-summary__card img {
+.style--flex header.section .header__top .logo {
     position: absolute;
     top: 0;
-}
-
-.style__flex .section__product-summary .product-summary__card img:first-child {
-    left: 0;
-}
-
-.style__flex .section__product-summary .product-summary__card img:last-child {
     right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 
-.style__flex .section__product-summary .product-summary__card .product-summary {
-    height: 100%;
-    padding: 0 50px;
-    box-sizing: border-box;
+.style--flex header.section .main-menu-area .menu-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 0;
 }
 
-.style__flex .section__product-summary .product-summary__card .product-summary:first-child {
-    left: 0;
+.style--flex header.section .main-menu-area .menu-container .menu__main {
+    flex: 1;
 }
 
-.style__flex .section__product-summary .product-summary__card .product-summary:last-child {
-    right: 0;
+/* SUMMARY */
+.style--flex .section__summary .container .summary__content-box {
+    display: flex;
 }
 
-/* ABOUT */
+.style--flex .section__summary .summary__card {
+    flex: 1;
+}
+
+/* SERVICE */
+.style--flex .section__service .service__content-box {
+    display: flex;
+}
+
+.style--flex .section__service .service__card {
+    flex: 1;
+}
 
 /* FOOTER */
-.style__flex footer.section .container {
+.style--flex footer.section .container {
+    display: flex;
     justify-content: space-between;
 }
 
-.style__flex footer.section .sns {
+.style--flex footer.section .footer__right {
     display: flex;
+}
+
+.style--flex footer.section .footer__image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.style--flex footer.section .footer__contact .sns__container {
+    display: flex;
+    justify-content: flex-end;
 }

@@ -1,7 +1,10 @@
+/* FLOAT */
 /* CLEARFIX */
-.style--float .container::after,
 .style--float .header__top::after,
 .style--float .menu-container::after,
+.style--float .summary__content-box::after,
+.style--float .service__content-box::after,
+.style--float footer.section .container::after,
 .style--float .footer__right::after,
 .style--float .footer__image::after,
 .style--float .sns__container::after,
