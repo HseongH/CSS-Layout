@@ -1,0 +1,25 @@
+/* SECTION */
+.section .container {
+    max-width: none;
+    width: 95%;
+}
+
+@media (max-width: 900px) {
+    /* HEADER */
+    header.section .main-menu-area {
+        display: none;
+    }
+
+    #search-form {
+        width: 125px;
+        padding: 3px 7px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* SERVICE */
+    .section__service .service__card .box {
+        padding: 20px;
+    }
+}

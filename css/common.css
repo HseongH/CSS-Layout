@@ -76,7 +76,6 @@ img {
 /* BOX & TEXT */
 .box {
     background: #c7caf7;
-    padding: 30px;
     border-radius: 20px;
     border: 5px solid #333;
     box-sizing: border-box;
@@ -84,6 +83,9 @@ img {
     transition-duration: 0.3s;
     cursor: pointer;
     position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .box:hover {
@@ -115,7 +117,6 @@ header.section .header__top {
 header.section .header__top .logo {
     width: 150px;
     height: 30px;
-    padding: 0;
     position: absolute;
     top: 0;
     right: 0;
@@ -127,6 +128,8 @@ header.section .header__top .logo {
 header.section .header__top .search-area {
     position: relative;
     height: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, .3);
 }
 
 header.section .header__top .search-area .btn--search {
@@ -139,12 +142,12 @@ header.section .header__top .search-area .btn--search {
 }
 
 #search-form {
-    border-radius: 10px;
+    width: 175px;
     padding: 3px 7px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, .3);
+    box-sizing: border-box;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 header.section .main-menu-area {
@@ -185,8 +188,16 @@ header.section .main-menu-area .menu-container .menu__main .sub-container .menu_
 }
 
 /* BANNER */
+.section__banner .container {
+    height: 0;
+    padding-top: 39%;
+}
+
 .section__banner .image-slide {
-    height: 500px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .section__banner .image-slide {
@@ -244,6 +255,10 @@ header.section .main-menu-area .menu-container .menu__main .sub-container .menu_
 }
 
 /* SERVICE */
+.section__service .service__card .box {
+    padding: 30px;
+}
+
 .section__service .service__card .service__image--short {
     height: 250px;
 }
@@ -257,10 +272,6 @@ footer.section {
     padding: 30px 0;
     background: rgba(180, 180, 180, .5);
     color: #999;
-}
-
-footer.section .footer__image .thumbnail {
-    padding: 0;
 }
 
 footer.section .footer__contact .license a {

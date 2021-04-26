@@ -82,6 +82,6 @@
     justify-self: right;
     display: grid;
     grid-template-columns: repeat(3, 40px);
-    grid-template-rows: repeat(1, 40px);
+    grid-template-rows: 40px;
     column-gap: 10px;
 }

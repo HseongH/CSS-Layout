@@ -22,14 +22,14 @@
 }
 
 .style--float header.section .header__top .search-area {
-    margin-top: 22.5px;
+    margin-top: 22px;
     width: 200px;
     float: right;
 }
 
 .style--float header.section .main-menu-area .menu-container .menu__main {
-    margin-right: 40px;
-    width: 224px;
+    margin-right: 3.125%;
+    width: 17.5%;
     float: left;
 }
 
@@ -41,9 +41,9 @@
 
 /* SUMMARY */
 .style--float .section__summary .summary__card {
-    width: 400px;
+    width: 31.25%;
     float: left;
-    margin-right: 40px;
+    margin-right: 3.125%;
 }
 
 .style--float .section__summary .summary__card:last-child {
@@ -56,8 +56,8 @@
 
 /* SERVICE */
 .style--float .section__service .service__card {
-    width: 400px;
-    margin-right: 40px;
+    width: 31.25%;
+    margin-right: 3.125%;
     float: left;
 }
 

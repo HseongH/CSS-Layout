@@ -1,0 +1,33 @@
+/* FLOAT */
+/* FOOTER */
+.style--float footer.section .footer__info {
+    width: 300px;
+}
+
+.style--float footer.section .footer__image {
+    width: 170px;
+    height: 170px;
+    margin-right: 50px;
+}
+
+.style--float footer.section .footer__image .thumbnail {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 900px) {
+    /* FLOAT */
+    /* HEADER */
+    .style--float header.section .header__top .search-area {
+        width: 150px;
+    }
+
+    /* FOOTER */
+    .style--float footer.section .footer__info {
+        margin-bottom: 20px;
+    }
+
+    .style--float footer.section .footer__image {
+        margin-right: 30px;
+    }
+}
