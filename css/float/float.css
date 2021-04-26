@@ -2,8 +2,8 @@
 /* CLEARFIX */
 .style--float .header__top::after,
 .style--float .menu-container::after,
-.style--float .summary__content-box::after,
-.style--float .service__content-box::after,
+.style--float .summary__content-row::after,
+.style--float .service__content-row::after,
 .style--float footer.section .container::after,
 .style--float .footer__right::after,
 .style--float .footer__image::after,
@@ -15,32 +15,26 @@
 }
 
 /* HEADER */
-.style--float header.section .header__top {
-    position: relative;
-}
-
 .style--float header.section .header__top .btn--nav {
+    width: 50px;
     margin-top: 13px;
     float: left;
 }
 
-.style--float header.section .header__top .logo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-}
-
 .style--float header.section .header__top .search-area {
     margin-top: 22.5px;
+    width: 200px;
     float: right;
 }
 
 .style--float header.section .main-menu-area .menu-container .menu__main {
+    margin-right: 40px;
     width: 224px;
     float: left;
+}
+
+.style--float header.section .main-menu-area .menu-container .menu__main:last-child {
+    margin-right: 0;
 }
 
 /* BANNER */
@@ -49,17 +43,44 @@
 .style--float .section__summary .summary__card {
     width: 400px;
     float: left;
+    margin-right: 40px;
+}
+
+.style--float .section__summary .summary__card:last-child {
+    margin-right: 0;
+}
+
+.style--float .section__summary .summary__card .summary__image {
+    margin-bottom: 30px;
 }
 
 /* SERVICE */
 .style--float .section__service .service__card {
     width: 400px;
+    margin-right: 40px;
     float: left;
+}
+
+.style--float .section__service .service__card:last-child {
+    margin-right: 0;
+}
+
+.style--float .section__service .service__card .box:first-child {
+    margin-bottom: 20px;
 }
 
 /* FOOTER */
 .style--float footer.section .footer__info {
+    width: 500px;
     float: left;
+}
+
+.style--float footer.section .footer__info .info__items {
+    margin-bottom: 20px;
+}
+
+.style--float footer.section .footer__info .info__items:last-child {
+    margin-bottom: 0;
 }
 
 .style--float footer.section .footer__right {
@@ -67,10 +88,15 @@
 }
 
 .style--float footer.section .footer__image {
+    width: 210px;
+    height: 210px;
+    margin-right: 80px;
     float: left;
 }
 
 .style--float footer.section .footer__image .thumbnail {
+    width: 100px;
+    height: 100px;
     float: left;
 }
 
@@ -87,10 +113,21 @@
     float: left;
 }
 
+.style--float footer.section .footer__contact .license {
+    margin-bottom: 20px;
+}
+
 .style--float footer.section .footer__contact .sns__container {
     float: right;
 }
 
 .style--float footer.section .footer__contact .sns__container .sns {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
     float: left;
+}
+
+.style--float footer.section .footer__contact .sns__container .sns:last-child {
+    margin-right: 0;
 }

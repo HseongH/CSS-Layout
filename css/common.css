@@ -109,22 +109,24 @@ img {
 /* HEADER */
 header.section .header__top {
     height: 80px;
-}
-
-header.section .header__top .btn--nav {
-    width: 50px;
+    position: relative;
 }
 
 header.section .header__top .logo {
     width: 150px;
     height: 30px;
     padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 
 header.section .header__top .search-area {
-    width: 200px;
-    height: 30px;
     position: relative;
+    height: 30px;
 }
 
 header.section .header__top .search-area .btn--search {
@@ -150,12 +152,7 @@ header.section .main-menu-area {
 }
 
 header.section .main-menu-area .menu-container .menu__main {
-    margin-right: 40px;
     position: relative;
-}
-
-header.section .main-menu-area .menu-container .menu__main:last-child {
-    margin-right: 0;
 }
 
 header.section .main-menu-area .menu-container .menu__main .sub-container {
@@ -189,9 +186,12 @@ header.section .main-menu-area .menu-container .menu__main .sub-container .menu_
 
 /* BANNER */
 .section__banner .image-slide {
+    height: 500px;
+}
+
+.section__banner .image-slide {
     width: 0;
     min-width: 100%;
-    height: 500px;
     overflow: hidden;
 }
 
@@ -239,32 +239,11 @@ header.section .main-menu-area .menu-container .menu__main .sub-container .menu_
     padding: 50px 0;
 }
 
-.section__summary .summary__card {
-    margin-right: 40px;
-}
-
-.section__summary .summary__card:last-child {
-    margin-right: 0;
-}
-
 .section__summary .summary__card .summary__image {
     height: 250px;
-    margin-bottom: 30px;
 }
 
 /* SERVICE */
-.section__service .service__card {
-    margin-right: 40px;
-}
-
-.section__service .service__card:last-child {
-    margin-right: 0;
-}
-
-.section__service .service__card .box:first-child {
-    margin-bottom: 20px;
-}
-
 .section__service .service__card .service__image--short {
     height: 250px;
 }
@@ -280,31 +259,8 @@ footer.section {
     color: #999;
 }
 
-footer.section .footer__info {
-    width: 500px;
-}
-
-footer.section .footer__info .info__items {
-    margin-bottom: 20px;
-}
-
-footer.section .footer__info .info__items:last-child {
-    margin-bottom: 0;
-}
-
-footer.section .footer__image {
-    width: 210px;
-    height: 210px;
-    margin-right: 80px;
-}
-
 footer.section .footer__image .thumbnail {
-    width: 100px;
-    height: 100px;
-}
-
-footer.section .footer__contact .license {
-    margin-bottom: 20px;
+    padding: 0;
 }
 
 footer.section .footer__contact .license a {
@@ -321,11 +277,4 @@ footer.section .footer__contact .license strong {
 
 footer.section .footer__contact .sns__container .sns {
     padding: 0;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-footer.section .footer__contact .sns__container .sns:last-child {
-    margin-right: 0;
 }
