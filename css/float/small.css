@@ -1,0 +1,43 @@
+/* FLOAT */
+/* HEADER */
+.style--float header.section .header__top .logo {
+    margin-top: 22px;
+    float: left;
+    margin-left: 20px;
+}
+
+/* SUMMARY & SERVICE */
+.style--float .section__summary .summary__card,
+.style--float .section__service .service__card {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.style--float .section__summary .summary__card::after,
+.style--float .section__service .service__card::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.style--float .section__summary .summary__card .summary__image,
+.style--float .section__service .service__card .box:first-child {
+    width: 48%;
+    float: left;
+}
+
+.style--float .section__summary .summary__card .summary__description,
+.style--float .section__service .service__card .box:last-child {
+    width: 48%;
+    float: right;
+}
+
+.style--float .section__summary .summary__card:nth-child(2) .summary__image {
+    float: right;
+}
+
+.style--float .section__summary .summary__card:nth-child(2) .summary__description {
+    float: left;
+}

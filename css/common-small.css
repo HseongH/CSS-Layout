@@ -1,0 +1,14 @@
+/* HEADER */
+header.section .header__top {
+    position: static;
+}
+
+header.section .header__top .logo {
+    position: static;
+    margin: 0;
+}
+
+/* SERVICE */
+.section__service .service__card .service__image--long {
+    height: 250px;
+}

@@ -1,0 +1,34 @@
+/* FLOAT */
+/* SUMMARY & SERVICE */
+.style--flex .section__summary .container .summary__content-row,
+.style--flex .section__service .service__content-row {
+    display: block;
+}
+
+.style--flex .section__summary .summary__card,
+.style--flex .section__service .service__card {
+    margin-right: 0;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.style--flex .section__summary .summary__card .summary__image,
+.style--flex .section__service .service__card .box:first-child {
+    flex: 1;
+    margin-right: 2%;
+}
+
+.style--flex .section__summary .summary__card .summary__description,
+.style--flex .section__service .service__card .box:last-child {
+    flex: 1;
+}
+
+.style--flex .section__summary .summary__card:nth-child(2) .summary__image {
+    order: 1;
+    margin-right: 0;
+}
+
+.style--flex .section__summary .summary__card:nth-child(2) .summary__description {
+    order: 0;
+    margin-right: 2%;
+}

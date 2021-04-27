@@ -1,0 +1,28 @@
+/* FLOAT */
+/* SUMMARY & SERVICE */
+.style--flex .section__summary .summary__card,
+.style--flex .section__service .service__card {
+    display: block;
+}
+
+.style--flex .section__summary .summary__card .summary__image,
+.style--flex .section__service .service__card .box:first-child {
+    margin-right: 0;
+}
+
+.style--flex .section__summary .summary__card:nth-child(2) .summary__description {
+    margin-right: 0;
+}
+
+/* FOOTER */
+.style--flex footer.section .footer__right {
+    flex-wrap: wrap;
+}
+
+.style--flex footer.section .footer__image {
+    margin-bottom: 20px;
+}
+
+.style--flex footer.section .footer__contact .sns__container {
+    justify-content: flex-start;
+}

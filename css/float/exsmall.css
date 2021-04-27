@@ -1,0 +1,32 @@
+/* FLOAT */
+/* HEADER */
+.style--float header.section .header__top .logo {
+    float: right;
+    margin-left: 0;
+}
+
+/* SUMMARY & SERVICE */
+.style--float .section__summary .summary__card .summary__image,
+.style--float .section__service .service__card .box:first-child {
+    width: 100%;
+    float: none;
+}
+
+.style--float .section__summary .summary__card .summary__description,
+.style--float .section__service .service__card .box:last-child {
+    width: 100%;
+    float: none;
+}
+
+/* FOOTER */
+.style--float footer.section .footer__info {
+    width: 100%;
+}
+
+.style--float footer.section .footer__image {
+    margin-bottom: 20px;
+}
+
+.style--float footer.section .footer__contact .sns__container {
+    float: none;
+}

@@ -1,0 +1,27 @@
+/* GRID */
+/* HEADER */
+.style--grid header.section .header__top {
+    grid-template-columns: 50px 150px 150px;
+}
+
+/* SUMMARY & SERVICE */
+.style--grid .section__summary .summary__content-row,
+.style--grid .section__service .service__content-row {
+    display: block;
+}
+
+.style--grid .section__summary .summary__card,
+.style--grid .section__service .service__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2%;
+    margin-bottom: 15px;
+}
+
+.style--grid .section__summary .summary__card:nth-child(2) .summary__image {
+    order: 1;
+}
+
+.style--grid .section__summary .summary__card:nth-child(2) .summary__description {
+    order: 0;
+}

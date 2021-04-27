@@ -1,0 +1,9 @@
+/* HEADER */
+header.section .header__top .search-area {
+    display: none;
+}
+
+/* BANNER */
+.section__banner .container {
+    padding-top: 50%;
+}

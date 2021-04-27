@@ -14,7 +14,7 @@
 }
 
 @media (max-width: 900px) {
-    /* FLEX */
+    /* GRID */
     /* HEADER */
     .style--grid header.section .header__top {
         grid-template-columns: 50px 150px;
@@ -32,8 +32,13 @@
 
     /* FOOTER */
     .style--grid footer.section .container {
-        row-gap: 20px;
-        grid-template-rows: auto auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .style--grid footer.section .footer__info {
+        width: 300px;
+        margin-bottom: 20px;
     }
 
     .style--grid footer.section .footer__right {

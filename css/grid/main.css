@@ -21,7 +21,8 @@
 /* BANNER */
 
 /* SUMMARY */
-.style--grid .section__summary .summary__content-row {
+.style--grid .section__summary .summary__content-row,
+.style--grid .section__service .service__content-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 40px;
@@ -33,12 +34,6 @@
 }
 
 /* SERVICE */
-.style--grid .section__service .service__content-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 40px;
-}
-
 .style--grid .section__service .service__card {
     display: grid;
     row-gap: 20px;
