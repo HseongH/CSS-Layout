@@ -1,3 +1,15 @@
+/* INPUT */
+.input-box {
+    font-size: 14px;
+}
+
+/* LAYOUT CONTROLER */
+.section__layout .layout__controler .controler__items {
+    width: auto;
+    padding: 5px;
+    font-size: 12px;
+}
+
 /* HEADER */
 header.section .header__top .search-area {
     display: none;
@@ -6,4 +18,45 @@ header.section .header__top .search-area {
 /* BANNER */
 .section__banner .container {
     padding-top: 50%;
+}
+
+/* ENTER IMAGE */
+.enter-image,
+.font-selection-container {
+    width: 80%;
+}
+
+.enter-image .btn--close,
+.font-selection-container .btn--close {
+    width: 20px;
+}
+
+.enter-image .show-image .warning {
+    max-width: 150px;
+}
+
+/* SELECT FONT */
+.font-selection-container .selection__top .selection__title {
+    font-size: 14px;
+}
+
+.font-selection-container .font-selection {
+    width: 100%;
+    float: none;
+}
+
+.font-selection-container .noto {
+    margin-bottom: 30px;
+}
+
+.font-selection-container .font-selection .strong {
+    font-size: 16px;
+}
+
+.font-selection-container .font-selection .standard {
+    font-size: 14px;
+}
+
+.font-selection-container .font-selection .thin {
+    font-size: 12px;
 }

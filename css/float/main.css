@@ -40,13 +40,15 @@
 /* BANNER */
 
 /* SUMMARY */
-.style--float .section__summary .summary__card {
+.style--float .section__summary .summary__card,
+.style--float .section__service .service__card {
     width: 31.25%;
     float: left;
     margin-right: 3.125%;
 }
 
-.style--float .section__summary .summary__card:last-child {
+.style--float .section__summary .summary__card:last-child,
+.style--float .section__service .service__card:last-child {
     margin-right: 0;
 }
 
@@ -55,16 +57,6 @@
 }
 
 /* SERVICE */
-.style--float .section__service .service__card {
-    width: 31.25%;
-    margin-right: 3.125%;
-    float: left;
-}
-
-.style--float .section__service .service__card:last-child {
-    margin-right: 0;
-}
-
 .style--float .section__service .service__card .box:first-child {
     margin-bottom: 20px;
 }

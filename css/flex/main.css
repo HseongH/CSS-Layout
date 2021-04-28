@@ -30,16 +30,19 @@
 /* BANNER */
 
 /* SUMMARY */
-.style--flex .section__summary .container .summary__content-row {
+.style--flex .section__summary .container .summary__content-row,
+.style--flex .section__service .service__content-row {
     display: flex;
 }
 
-.style--flex .section__summary .summary__card {
+.style--flex .section__summary .summary__card,
+.style--flex .section__service .service__card {
     flex: 1;
     margin-right: 40px;
 }
 
-.style--flex .section__summary .summary__card:last-child {
+.style--flex .section__summary .summary__card:last-child,
+.style--flex .section__service .service__card:last-child {
     margin-right: 0;
 }
 
@@ -48,19 +51,6 @@
 }
 
 /* SERVICE */
-.style--flex .section__service .service__content-row {
-    display: flex;
-}
-
-.style--flex .section__service .service__card {
-    flex: 1;
-    margin-right: 40px;
-}
-
-.style--flex .section__service .service__card:last-child {
-    margin-right: 0;
-}
-
 .style--flex .section__service .service__card .box:first-child {
     margin-bottom: 20px;
 }

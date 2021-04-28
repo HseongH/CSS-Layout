@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,220 +43,258 @@
 
     <!-- CLASS LIST -->
     <link rel="stylesheet" href="css/class-list.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="js/index.js" defer></script>
+    <script src="js/displayed-hide-list.js" defer></script>
 </head>
+
 <body>
-<div class="body__container style--grid">
+    <div class="body__container style--float">
 
-    <!-- HEADER -->
-    <header class="section">
-        <div class="container">
+        <!-- LAYOUT CONTROLER -->
+        <article class="section section__layout">
+            <div class="container">
 
-            <div class="header__top">
-                <button class="btn btn--nav">
-                    <img src="https://img.icons8.com/windows/96/000000/xbox-menu.png" alt="menu" />
+                <div class="layout__controler">
+                    <button class="btn controler__items active">FLOAT</button>
+                    <button class="btn controler__items">FLEX</button>
+                    <button class="btn controler__items">GRID</button>
+                </div>
+
+                <button class="btn btn--layout btn--show-line">
+                    레이아웃 경계선 보기
                 </button>
 
-                <h1 class="logo box">
-                    <a href="#"></a>
-                </h1>
+            </div>
+        </article>
 
-                <div class="search-area">
-                    <button type="submit" class="btn btn--search">
-                        <img src="https://img.icons8.com/fluent-systems-filled/96/000000/search.png" alt="search" />
+        <!-- HEADER -->
+        <header class="section">
+            <div class="container">
+
+                <div class="header__top">
+                    <button class="btn btn--nav">
+                        <img src="https://img.icons8.com/windows/96/000000/xbox-menu.png" alt="menu" />
                     </button>
 
-                    <form id="search-form" method="GET">
-                        <input class="input-box" type="text" id="search-input" placeholder="검색">
-                    </form>
+                    <h1 class="logo box">
+                        <a href="#"></a>
+                    </h1>
+
+                    <div class="search-area">
+                        <button type="submit" class="btn btn--search">
+                            <img src="https://img.icons8.com/fluent-systems-filled/96/000000/search.png" alt="search" />
+                        </button>
+
+                        <form id="search-form" method="GET">
+                            <input class="input-box" type="text" id="search-input" placeholder="검색">
+                        </form>
+                    </div>
                 </div>
+
+                <nav class="main-menu-area">
+                    <ul class="menu-container">
+                        <li class="menu__main text"></li>
+
+                        <li class="menu__main text"></li>
+
+                        <li class="menu__main text"></li>
+
+                        <li class="menu__main text"></li>
+
+                        <li class="menu__main text"></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- BANNER -->
+        <section class="section section__banner">
+            <div class="container">
+
+                <div class="image-slide box"></div>
+
+                <button class="btn btn--left arrow">
+                    <img src="https://img.icons8.com/material-rounded/96/000000/back--v1.png" alt="left arrow" />
+                </button>
+                <button class="btn btn--right arrow">
+                    <img src="https://img.icons8.com/material-rounded/96/000000/forward.png" alt="right arrow" />
+                </button>
+
+                <div class="dot-button-container">
+                    <button class="btn btn--dot"></button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SUMMARY -->
+        <section class="section section__summary">
+            <div class="container">
+
+                <h2 class="title text"></h2>
+
+                <div class="summary__content-row">
+                    <div class="summary__card">
+                        <div class="summary__image box"></div>
+
+                        <p class="summary__description text"></p>
+                    </div>
+
+                    <div class="summary__card">
+                        <div class="summary__image box"></div>
+
+                        <p class="summary__description text"></p>
+                    </div>
+
+                    <div class="summary__card">
+                        <div class="summary__image box"></div>
+
+                        <p class="summary__description text"></p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICE -->
+        <section class="section section__service">
+            <div class="container">
+
+                <h2 class="title text"></h2>
+
+                <div class="service__content-row">
+                    <div class="service__card">
+                        <div class="service__image--short box">
+                            <h3 class="service__title text"></h3>
+                        </div>
+
+                        <div class="service__image--long box">
+                            <h3 class="service__title text"></h3>
+                        </div>
+                    </div>
+
+                    <div class="service__card">
+                        <div class="service__image--long box">
+                            <h3 class="service__title text"></h3>
+                        </div>
+
+                        <div class="service__image--short box">
+                            <h3 class="service__title text"></h3>
+                        </div>
+                    </div>
+
+                    <div class="service__card">
+                        <div class="service__image--short box">
+                            <h3 class="service__title text"></h3>
+                        </div>
+
+                        <div class="service__image--long box">
+                            <h3 class="service__title text"></h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="section">
+            <div class="container">
+
+                <div class="footer__info">
+                    <p class="info__items address text"></p>
+                    <p class="info__items number text"></p>
+                    <p class="info__items email text"></p>
+                </div>
+
+                <div class="footer__right">
+                    <div class="footer__image">
+                        <div class="thumbnail box"></div>
+                        <div class="thumbnail box"></div>
+                        <div class="thumbnail box"></div>
+                        <div class="thumbnail box"></div>
+                    </div>
+
+                    <div class="footer__contact">
+                        <div class="license">
+                            <a href="https://icons8.com/" target="_blank"><strong>icon by</strong>
+                                https://icons8.com/</a>
+                        </div>
+
+                        <div class="sns__container">
+                            <div class="sns box"></div>
+                            <div class="sns box"></div>
+                            <div class="sns box"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- ENTER IMAGE -->
+        <div class="enter-image hide">
+            <div class="enter__top">
+                <input type="url" class="input-box" id="input--image-url" placeholder="이미지 URL을 입력해 주세요.">
+
+                <button class="btn btn--close">
+                    <img src="https://img.icons8.com/windows/32/000000/delete-sign.png" alt="delete icon" />
+                </button>
             </div>
 
-            <nav class="main-menu-area">
-                <ul class="menu-container">
-                    <li class="menu__main text">
-                        <ul class="sub-container hide">
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                        </ul>
-                    </li>
-                    
-                    <li class="menu__main text">
-                        <ul class="sub-container hide">
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                        </ul>
-                    </li>
+            <div class="show-image">
+                <div class="warning hide">
+                    <div class="warning__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
+                            viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#e74c3c">
+                                    <path
+                                        d="M86,17.30078l-4.70312,8.0625l-64.5,111.69922l-4.53516,8.0625h147.47656l-4.53516,-8.0625l-64.5,-111.69922zM86,38.80078l55.09375,95.57422h-110.1875zM80.625,75.25v32.25h10.75v-32.25zM80.625,112.875v10.75h10.75v-10.75z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
 
-                    <li class="menu__main text">
-                        <ul class="sub-container hide">
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu__main text">
-                        <ul class="sub-container hide">
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu__main text">
-                        <ul class="sub-container hide">
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                            <li class="menu__sub"></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
+                    <p class="warning__text"></p>
+                </div>
+            </div>
         </div>
-    </header>
 
-    <!-- BANNER -->
-    <section class="section section__banner">
-        <div class="container">
+        <!-- SELECT FONT -->
+        <div class="font-selection-container">
+            <div class="selection__top">
+                <h3 class="selection__title">
+                    사용할 폰트를 선택해 주세요.
+                </h3>
 
-            <div class="image-slide box"></div>
-
-            <button class="btn btn--left arrow">
-                <img src="https://img.icons8.com/material-rounded/96/000000/back--v1.png" alt="left arrow" />
-            </button>
-            <button class="btn btn--right arrow">
-                <img src="https://img.icons8.com/material-rounded/96/000000/forward.png" alt="right arrow" />
-            </button>
-
-            <div class="dot-button-container">
-                <button class="btn btn--dot"></button>
+                <button class="btn btn--close">
+                    <img src="https://img.icons8.com/windows/32/000000/delete-sign.png" alt="delete icon" />
+                </button>
             </div>
 
+            <div class="noto font-selection">
+                <p class="strong">Noto Sans KR</p>
+                <p class="standard">Noto Sans KR</p>
+                <p class="thin">Noto Sans KR</p>
+            </div>
+
+            <div class="roboto font-selection">
+                <p class="strong">Roboto</p>
+                <p class="standard">Roboto</p>
+                <p class="thin">Roboto</p>
+            </div>
         </div>
-    </section>
 
-    <!-- SUMMARY -->
-    <section class="section section__summary">
-        <div class="container">
-
-            <h2 class="title text"></h2>
-
-            <div class="summary__content-row">
-                <div class="summary__card">
-                    <div class="summary__image box"></div>
-    
-                    <p class="summary__description text"></p>
-                </div>
-    
-                <div class="summary__card">
-                    <div class="summary__image box"></div>
-    
-                    <p class="summary__description text"></p>
-                </div>
-    
-                <div class="summary__card">
-                    <div class="summary__image box"></div>
-    
-                    <p class="summary__description text"></p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SERVICE -->
-    <section class="section section__service">
-        <div class="container">
-
-            <h2 class="title text"></h2>
-
-            <div class="service__content-row">
-                <div class="service__card">
-                    <div class="service__image--short box">
-                        <h3 class="service__title text"></h3>
-                    </div>
-    
-                    <div class="service__image--long box">
-                        <h3 class="service__title text"></h3>
-                    </div>
-                </div>
-    
-                <div class="service__card">
-                    <div class="service__image--long box">
-                        <h3 class="service__title text"></h3>
-                    </div>
-    
-                    <div class="service__image--short box">
-                        <h3 class="service__title text"></h3>
-                    </div>
-                </div>
-    
-                <div class="service__card">
-                    <div class="service__image--short box">
-                        <h3 class="service__title text"></h3>
-                    </div>
-    
-                    <div class="service__image--long box">
-                        <h3 class="service__title text"></h3>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="section">
-        <div class="container">
-
-            <div class="footer__info">
-                <p class="info__items address text"></p>
-                <p class="info__items number text"></p>
-                <p class="info__items email text"></p>
-            </div>
-
-            <div class="footer__right">
-                <div class="footer__image">
-                    <div class="thumbnail box"></div>
-                    <div class="thumbnail box"></div>
-                    <div class="thumbnail box"></div>
-                    <div class="thumbnail box"></div>
-                </div>
-    
-                <div class="footer__contact">
-                    <div class="license">
-                        <a href="https://icons8.com/" target="_blank"><strong>icon by</strong> https://icons8.com/</a>
-                    </div>
-    
-                    <div class="sns__container">
-                        <div class="sns box"></div>
-                        <div class="sns box"></div>
-                        <div class="sns box"></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </footer>
-
-</div>
+    </div>
 </body>
+
 </html>
