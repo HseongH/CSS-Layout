@@ -380,6 +380,7 @@ footer.section .footer__contact .sns__container .sns {
     bottom: 0;
     right: 0;
     box-shadow: 0 -1px 7px rgba(223, 65, 65, .3);
+    background: #fff;
 }
 
 .enter-image .show-image .warning .warning__icon {
@@ -389,6 +390,15 @@ footer.section .footer__contact .sns__container .sns {
 .enter-image .show-image .warning .warning__icon svg {
     width: 30px;
     height: 30px;
+}
+
+.enter-image .btn--enter-image {
+    width: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    background: #F7E598;
+    margin: 15px auto 0;
+    display: block;
 }
 
 /* SELECT FONT */

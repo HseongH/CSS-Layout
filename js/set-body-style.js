@@ -13,9 +13,9 @@ layout.setBodyStyle.setLayout = function() {
     const siblings = layout.findSiblings(this);
 
     Array.prototype.forEach.call(siblings, sib => {
-        const state = sib.innerText.toLowerCase();
+        const type = sib.innerText.toLowerCase();
         
-        layout.setBodyStyle.body.classList.remove(`style--${state}`);
+        layout.setBodyStyle.body.classList.remove(`style--${type}`);
         sib.classList.remove('active');
     });
 
