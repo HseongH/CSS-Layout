@@ -22,13 +22,13 @@ layout.displayed.closeBtn = document.querySelectorAll('.btn--close');
 layout.displayed.enterImg = document.querySelector('.enter-image');
 layout.displayed.font = document.querySelector('.font-selection-container');
 
-[].forEach.call(layout.displayed.closeBtn, close => {
+Array.prototype.forEach.call(layout.displayed.closeBtn, close => {
     close.addEventListener('click', function() {
         layout.displayed.hideElement(this.parentNode.parentNode);
     });
 });
 
-[].forEach.call(layout.box, box => {
+Array.prototype.forEach.call(layout.box, box => {
     box.addEventListener('click', function() {
         layout.displayed.showElement(layout.displayed.enterImg);
     });

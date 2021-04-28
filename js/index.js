@@ -23,3 +23,19 @@ const layout = {
 // COMMON VARIABLE
 layout.box = document.querySelectorAll('.box');
 layout.text = document.querySelectorAll('.text');
+
+// COMMON FUNCTION
+layout.findSiblings = function(elem) {
+    const siblings = [];
+    let searchSibling = elem.parentNode.firstChild;
+
+    while (searchSibling) {
+        if (searchSibling.nodeType === 1 && searchSibling !== elem) {
+            siblings.push(searchSibling);
+        }
+
+        searchSibling = searchSibling.nextSibling;
+    }
+
+    return siblings;
+}
