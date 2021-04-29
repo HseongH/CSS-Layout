@@ -38,6 +38,7 @@ a {
 
 img {
     width: 100%;
+    display: block;
 }
 
 /* BUTTON */
@@ -366,6 +367,10 @@ footer.section .footer__contact .sns__container .sns {
     position: relative;
 }
 
+.enter-image .show-image.preview {
+    min-height: 0;
+}
+
 .enter-image .show-image .warning {
     max-width: 200px;
     border-top-left-radius: 10px;
@@ -379,7 +384,7 @@ footer.section .footer__contact .sns__container .sns {
     position: absolute;
     bottom: 0;
     right: 0;
-    box-shadow: 0 -1px 7px rgba(223, 65, 65, .3);
+    box-shadow: 0 -1px 7px rgba(223, 65, 65, .6);
     background: #fff;
 }
 
