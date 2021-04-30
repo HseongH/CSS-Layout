@@ -46,10 +46,10 @@
 
     <!-- JAVASCRIPT -->
     <script src="js/index.js" defer></script>
-    <script src="js/displayed-hide-list.js" defer></script>
     <script src="js/set-body-style.js" defer></script>
     <script src="js/image-preview.js" defer></script>
     <script src="js/enter-image.js" defer></script>
+    <script src="js/displayed-hide-list.js" defer></script>
 </head>
 
 <body>
@@ -118,17 +118,6 @@
             <div class="container">
 
                 <div class="image-slide box"></div>
-
-                <button class="btn btn--left arrow">
-                    <img src="https://img.icons8.com/material-rounded/96/000000/back--v1.png" alt="left arrow" />
-                </button>
-                <button class="btn btn--right arrow">
-                    <img src="https://img.icons8.com/material-rounded/96/000000/forward.png" alt="right arrow" />
-                </button>
-
-                <div class="dot-button-container">
-                    <button class="btn btn--dot"></button>
-                </div>
 
             </div>
         </section>
@@ -249,7 +238,7 @@
             </div>
 
             <div class="show-image">
-                <div class="warning">
+                <div class="warning hide">
                     <div class="warning__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
                             viewBox="0 0 172 172" style=" fill:#000000;">
@@ -267,7 +256,9 @@
                         </svg>
                     </div>
 
-                    <p class="warning__text"></p>
+                    <p class="warning__text">
+                        이미지 크기가 작아 깨질 수 있습니다.
+                    </p>
                 </div>
             </div>
 

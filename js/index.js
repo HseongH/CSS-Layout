@@ -23,6 +23,7 @@ const layout = {
 // COMMON VARIABLE
 layout.box = document.querySelectorAll('.box');
 layout.text = document.querySelectorAll('.text');
+layout.selectedBox;
 
 // COMMON FUNCTION
 layout.findSiblings = function(elem) {

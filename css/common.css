@@ -121,6 +121,7 @@ img {
     transition-duration: 0.3s;
     cursor: pointer;
     position: relative;
+    overflow: hidden;
 }
 
 .box:hover {
@@ -205,6 +206,7 @@ header.section .main-menu-area .menu-container .menu__main {
 
 .section__banner .image-slide {
     height: 100%;
+    max-height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -218,26 +220,6 @@ header.section .main-menu-area .menu-container .menu__main {
 
 .section__banner .image-slide .banner__image-container {
     max-width: 1280px;
-}
-
-.section__banner .arrow {
-    width: 50px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: .3;
-}
-
-.section__banner .arrow:hover {
-    opacity: 1;
-}
-
-.section__banner .btn--left {
-    left: 0;
-}
-
-.section__banner .btn--right {
-    right: 0;
 }
 
 .section__banner .dot-button-container {
@@ -260,8 +242,10 @@ header.section .main-menu-area .menu-container .menu__main {
     padding: 50px 0;
 }
 
-.section__summary .summary__card .summary__image {
+.section__summary .summary__card .summary__image,
+.section__service .service__card .service__image--short {
     height: 250px;
+    max-height: 250px;
 }
 
 .section__summary .summary__card .summary__description {
@@ -277,12 +261,9 @@ header.section .main-menu-area .menu-container .menu__main {
     position: relative;
 }
 
-.section__service .service__card .service__image--short {
-    height: 250px;
-}
-
 .section__service .service__card .service__image--long {
     height: 400px;
+    max-height: 400px;
 }
 
 .section__service .service__card .box .service__title {

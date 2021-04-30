@@ -11,4 +11,5 @@ header.section .header__top .logo {
 /* SERVICE */
 .section__service .service__card .service__image--long {
     height: 250px;
+    max-height: 250px;
 }
