@@ -25,7 +25,7 @@ layout.enterText.createInputArea = function(parent) {
     parent.classList.add('input-text');
     inputBox.select();
     
-    inputBox.addEventListener('change', layout.enterText.enterText);
+    inputBox.addEventListener('blur', layout.enterText.enterText);
 }
 
 Array.prototype.forEach.call(layout.text, text => {

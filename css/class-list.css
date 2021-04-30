@@ -27,3 +27,8 @@
 .input-text .input-box {
     border-bottom: 2px solid #ccc;
 }
+
+/* SHOW LINE */
+.show-line {
+    background: repeating-linear-gradient(-45deg, #F7E598, #F7E598 10px, #fff 0, #fff 20px) !important;
+}

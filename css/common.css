@@ -169,6 +169,7 @@ header.section .header__top .search-area {
     height: 30px;
     border-radius: 10px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, .3);
+    background: #fff;
 }
 
 header.section .header__top .search-area .btn--search {
@@ -432,4 +433,17 @@ footer.section .footer__contact .sns__container .sns {
 .font-selection-container .font-selection .thin {
     font-weight: 300;
     font-size: 14px;
+}
+
+/* STYLE BOX */
+.show-style {
+    padding: 15px;
+    border: 5px solid #333;
+    background: #fff;
+    border-radius: 10px;
+    line-height: 1.5;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
