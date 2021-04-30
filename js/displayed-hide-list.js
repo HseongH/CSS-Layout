@@ -43,6 +43,7 @@ Array.prototype.forEach.call(layout.displayed.closeBtn, close => {
 
 Array.prototype.forEach.call(layout.box, box => {
     box.addEventListener('click', function() {
+        if (event.target === layout.selectedText) return;
         layout.displayed.showElement(layout.displayed.enterImg);
         layout.selectedBox = box;
     });

@@ -24,6 +24,7 @@ const layout = {
 layout.box = document.querySelectorAll('.box');
 layout.text = document.querySelectorAll('.text');
 layout.selectedBox;
+layout.selectedText;
 
 // COMMON FUNCTION
 layout.findSiblings = function(elem) {

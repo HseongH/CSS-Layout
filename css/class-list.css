@@ -20,16 +20,10 @@
     background: none;
 }
 
+.input-text:hover {
+    background: none;
+}
+
 .input-text .input-box {
     border-bottom: 2px solid #ccc;
-}
-
-/* CONTAINS TEXT */
-.contains-text {
-    height: auto;
-    background: none;
-}
-
-.contains-text:hover {
-    background: none;
 }
