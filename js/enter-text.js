@@ -19,7 +19,7 @@ layout.enterText.createInputArea = function(parent) {
     inputBox.setAttribute('class', 'input-box');
     inputBox.value = parent.innerText;
     
-    if (parent.innerText) parent.innerText = '';
+    parent.innerText = '';
 
     parent.appendChild(inputBox);
     parent.classList.add('input-text');

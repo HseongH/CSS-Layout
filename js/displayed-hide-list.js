@@ -26,7 +26,7 @@ layout.displayed.hideElementWhenClickAnywhere = function(elem) {
 
     if (target.closest(arg)) return;
 
-    elem.classList.add('hide');
+    layout.displayed.hideElement(elem);
 }
 
 // MODAL SHOW & HIDE

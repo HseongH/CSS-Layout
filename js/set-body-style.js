@@ -28,9 +28,9 @@ layout.setBodyStyle.layoutControler = document.querySelectorAll('.controler__ite
 layout.setBodyStyle.fontSelection = document.querySelectorAll('.font-selection');
 
 Array.prototype.forEach.call(layout.setBodyStyle.fontSelection, function(font) {
-    font.addEventListener('click', layout.setBodyStyle.setFont)
+    font.addEventListener('click', layout.setBodyStyle.setFont);
 });
 
 Array.prototype.forEach.call(layout.setBodyStyle.layoutControler, function(control) {
-    control.addEventListener('click', layout.setBodyStyle.setLayout)
+    control.addEventListener('click', layout.setBodyStyle.setLayout);
 });
