@@ -436,7 +436,7 @@ footer.section .footer__contact .sns__container .sns {
 }
 
 /* STYLE BOX */
-.show-style {
+.tooltip {
     padding: 15px;
     border: 5px solid #333;
     background: #fff;
@@ -444,6 +444,4 @@ footer.section .footer__contact .sns__container .sns {
     line-height: 1.5;
     display: inline-block;
     position: absolute;
-    top: 0;
-    left: 0;
 }

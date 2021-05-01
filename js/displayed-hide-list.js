@@ -47,10 +47,6 @@ Array.prototype.forEach.call(layout.box, box => {
         layout.displayed.showElement(layout.displayed.enterImg);
         layout.selectedBox = box;
     });
-
-    box.addEventListener('mouseover', function() {
-        layout.showStyle.elementStyle(box);
-    });
 });
 
 // HIDE ELEMENT WHEN CLICKED ANYWHERE
