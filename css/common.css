@@ -334,7 +334,7 @@ footer.section .footer__contact .license strong {
 }
 
 .enter-image .show-image.preview {
-    min-height: 0;
+    min-height: 100px;
 }
 
 .enter-image .show-image .warning {
