@@ -7,11 +7,6 @@
     align-items: center;
 }
 
-.style--grid header.section .header__top .logo {
-    width: 150px;
-    justify-self: center;
-}
-
 .style--grid header.section .main-menu-area .menu-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
